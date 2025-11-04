@@ -104,7 +104,7 @@ nav a:hover {
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   background-color: rgba(43, 58, 66, 0.5);
   colour: #fff;
   padding: 40px;
