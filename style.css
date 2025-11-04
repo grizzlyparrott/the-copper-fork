@@ -1,0 +1,294 @@
+/*
+ * Global styles for The Copper Fork demo restaurant site
+ *
+ * This stylesheet defines colours, typography and layout rules
+ * used across all pages. The design is kept simple and modern
+ * to emphasise the food photography and copy, while providing
+ * a professional look suitable for a portfolio sample. Colours
+ * are inspired by copper and slate tones.
+ */
+
+/* Colour palette variables for easy adjustment */
+:root {
+  --primary-colour: #b87333; /* copper tone for buttons and accents */
+  --dark-colour: #2b3a42;   /* deep slate for backgrounds and text */
+  --light-colour: #f7f7f7;  /* off‑white for page backgrounds */
+  --accent-colour: #8c503c; /* darker copper for hover states */
+}
+
+/* Reset defaults and establish base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: var(--light-colour);
+  color: var(--dark-colour);
+}
+
+/* Constrain content to a sensible width and centre it */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header and navigation */
+header {
+  background-color: var(--dark-colour);
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: colour 0.2s ease;
+}
+
+nav a:hover {
+  colour: var(--primary-colour);
+}
+
+/* Hero section on the home page */
+.hero {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  background-color: rgba(43, 58, 66, 0.5);
+  colour: #fff;
+  padding: 40px;
+  max-width: 600px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: var(--primary-colour);
+  colour: #fff;
+  padding: 12px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent-colour);
+}
+
+/* Three‑column features section on home page */
+.features {
+  padding: 60px 0;
+  background-color: var(--light-colour);
+}
+
+.features .feature {
+  text-align: centre;
+  margin-bottom: 40px;
+}
+
+.features .feature h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  colour: var(--dark-colour);
+}
+
+.features .feature p {
+  colour: #555;
+}
+
+/* Page banners used on menu, about and contact pages */
+.page-banner {
+  background-size: cover;
+  background-position: centre;
+  padding: 80px 20px;
+  colour: #fff;
+  text-align: centre;
+  position: relative;
+}
+
+.page-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 58, 66, 0.6);
+  z-index: 0;
+}
+
+.page-banner .banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.page-banner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.page-banner p {
+  font-size: 1.1rem;
+}
+
+/* Menu styling */
+.menu-section {
+  padding: 60px 0;
+  background-color: var(--light-colour);
+}
+
+.menu-section h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  colour: var(--dark-colour);
+}
+
+.menu-list {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.menu-list li {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.menu-list li .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.menu-list li .dish-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.menu-list li .price {
+  font-weight: bold;
+}
+
+.menu-list li .description {
+  colour: #555;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* About and contact content */
+.about-content, .contact-info {
+  padding: 60px 0;
+  background-color: var(--light-colour);
+}
+
+.about-content h2, .contact-info h2, .contact-info h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.about-content p, .contact-info p {
+  margin-bottom: 15px;
+  colour: #555;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: var(--primary-colour);
+  colour: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-colour);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-colour);
+  colour: #fff;
+  text-align: centre;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive layout adjustments */
+@media (min-width: 768px) {
+  .features .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .features .feature {
+    width: 30%;
+  }
+}

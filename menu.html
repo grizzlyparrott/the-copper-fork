@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+  The Copper Fork – menu page
+
+  This page displays the full menu organised into sections. Each
+  dish lists its name, price and a short description. The page
+  opens with a banner image to establish mood. A consistent
+  navigation bar ties the page into the rest of the site.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu – The Copper Fork</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">The Copper Fork</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page banner with a food‑themed image -->
+    <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1600&q=80');">
+      <div class="banner-content">
+        <h1>Our Menu</h1>
+        <p>Delicious dishes for every taste</p>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <div class="container">
+        <!-- Starters -->
+        <h2>Starters</h2>
+        <ul class="menu-list">
+          <li>
+            <div class="row"><span class="dish-name">Crispy Calamari</span><span class="price">$11</span></div>
+            <span class="description">Lightly breaded with garlic aioli</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Spinach & Artichoke Dip</span><span class="price">$9</span></div>
+            <span class="description">Served hot with house chips</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Truffle Fries</span><span class="price">$8</span></div>
+            <span class="description">Parmesan, herbs, and truffle oil</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Wings (6 pc)</span><span class="price">$10</span></div>
+            <span class="description">Buffalo, BBQ or Garlic Parmesan</span>
+          </li>
+        </ul>
+
+        <!-- Salads -->
+        <h2>Salads</h2>
+        <ul class="menu-list">
+          <li>
+            <div class="row"><span class="dish-name">House Garden</span><span class="price">$8</span></div>
+            <span class="description">Mixed greens, tomato, cucumber, balsamic</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Caesar</span><span class="price">$9</span></div>
+            <span class="description">Romaine, parmesan, croutons, creamy Caesar</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Grilled Chicken Cobb</span><span class="price">$13</span></div>
+            <span class="description">Avocado, egg, bacon, blue cheese</span>
+          </li>
+        </ul>
+
+        <!-- Main Plates -->
+        <h2>Main Plates</h2>
+        <ul class="menu-list">
+          <li>
+            <div class="row"><span class="dish-name">The Copper Burger</span><span class="price">$14</span></div>
+            <span class="description">Half‑pound Angus, cheddar, house sauce</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Grilled Salmon</span><span class="price">$18</span></div>
+            <span class="description">Lemon butter sauce, seasonal veggies</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Ribeye Steak (12 oz)</span><span class="price">$26</span></div>
+            <span class="description">Garlic herb butter, mashed potatoes</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Chicken Alfredo</span><span class="price">$16</span></div>
+            <span class="description">Fettuccine, creamy parmesan sauce</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Veggie Stir Fry</span><span class="price">$13</span></div>
+            <span class="description">Ginger‑soy glaze, jasmine rice</span>
+          </li>
+        </ul>
+
+        <!-- Sandwiches & Wraps -->
+        <h2>Sandwiches & Wraps</h2>
+        <ul class="menu-list">
+          <li>
+            <div class="row"><span class="dish-name">Turkey Club</span><span class="price">$12</span></div>
+            <span class="description">Bacon, lettuce, tomato, garlic mayo</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">BBQ Pulled Pork</span><span class="price">$13</span></div>
+            <span class="description">Slaw, crispy onions, brioche bun</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Grilled Veggie Wrap</span><span class="price">$11</span></div>
+            <span class="description">Zucchini, peppers, hummus</span>
+          </li>
+        </ul>
+
+        <!-- Desserts -->
+        <h2>Desserts</h2>
+        <ul class="menu-list">
+          <li>
+            <div class="row"><span class="dish-name">Chocolate Lava Cake</span><span class="price">$8</span></div>
+            <span class="description">Warm centre, vanilla ice cream</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Cheesecake</span><span class="price">$7</span></div>
+            <span class="description">Strawberry or caramel drizzle</span>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Tiramisu</span><span class="price">$8</span></div>
+            <span class="description">Espresso‑soaked ladyfingers, mascarpone</span>
+          </li>
+        </ul>
+
+        <!-- Drinks -->
+        <h2>Drinks</h2>
+        <ul class="menu-list">
+          <li>
+            <div class="row"><span class="dish-name">Fountain Drinks</span><span class="price">$3</span></div>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Fresh Lemonade</span><span class="price">$4</span></div>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Iced Tea</span><span class="price">$3</span></div>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">Craft Beer</span><span class="price">$6</span></div>
+          </li>
+          <li>
+            <div class="row"><span class="dish-name">House Wine</span><span class="price">$7 / glass</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 The Copper Fork. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
